@@ -175,7 +175,7 @@ def player_numbers (team_name)
       end
     end
   end
-  pp team_numbers
+  return team_numbers
 end
 
 player_numbers("Brooklyn Nets")
