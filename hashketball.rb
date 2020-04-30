@@ -182,3 +182,5 @@ def player_stats (player)
   
   
 end
+
+player_stats ("Alan Anderson")
