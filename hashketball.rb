@@ -180,8 +180,8 @@ end
 
 def player_stats (player)
   game_hash.each do |home_away, outer_value|
-end
-  
+    
+  end
 end
 
 player_stats ("Alan Anderson")
