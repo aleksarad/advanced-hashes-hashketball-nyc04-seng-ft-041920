@@ -195,6 +195,7 @@ def big_shoe_rebounds
     outer_value[:players].each do |player|
       if player[:shoe] > shoe_size
          shoe_size = player[:shoe]
+         pp player[:player_name]
       end
     end
   end
