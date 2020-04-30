@@ -184,7 +184,6 @@ def player_stats (player)
     outer_value[:players].each do |key, inner_val|
       if key[:player_name] == player 
         return key
-        
       end
     end
   end
