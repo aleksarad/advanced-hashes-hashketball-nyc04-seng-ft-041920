@@ -182,6 +182,7 @@ def player_stats (player)
   game_hash.each do |home_away, outer_value|
     outer_value[:players].each do |key, inner_val|
   end
+  end
 end
 
 player_stats ("Alan Anderson")
