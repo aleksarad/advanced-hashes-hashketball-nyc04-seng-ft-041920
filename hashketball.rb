@@ -167,5 +167,6 @@ names = []
 end
 
 def player_numbers (team_name)
-  
+  team_numbers = []
+  game_hash.each do |home_away, outer_value
 end
