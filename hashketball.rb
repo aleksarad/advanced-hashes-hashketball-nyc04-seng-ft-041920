@@ -188,7 +188,6 @@ def player_stats (player)
       end
     end
   end
-  pp stats
 end
 
 player_stats ("Alan Anderson")
