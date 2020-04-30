@@ -183,7 +183,7 @@ def player_stats (player)
   game_hash.each do |home_away, outer_value|
     outer_value[:players].each do |key, inner_val|
       if key[:player_name] == player 
-        stats[:number] = key[:number]
+        pp key
         
       end
     end
