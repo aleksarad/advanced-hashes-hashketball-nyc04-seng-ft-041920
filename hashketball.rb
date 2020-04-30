@@ -191,7 +191,7 @@ end
 
 def big_shoe_rebounds
   biggest_shoe = 0
-  rebounds = ""
+  rebounds = 0
   game_hash.each do |home_away, outer_value|
     outer_value[:players].each do |player|
       if player[:shoe] > shoe_size
