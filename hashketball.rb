@@ -169,7 +169,7 @@ end
 def player_numbers (team_name)
   team_numbers = []
   game_hash.each do |home_away, outer_value|
-    pp outer_value
+    if outer_value[:team_name] == team_name
   end
 end
 
