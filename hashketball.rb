@@ -170,8 +170,8 @@ def player_numbers (team_name)
   team_numbers = []
   game_hash.each do |home_away, outer_value|
     if outer_value[:team_name] == team_name
-      outer_value[:players].each do |k, v|
-        pp k[:number]
+      outer_value[:players].each do |key, inner_val|
+        team_numbers.push(k[:number])
       end
     end
   end
