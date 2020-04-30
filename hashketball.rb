@@ -192,7 +192,7 @@ end
 def big_shoe_rebounds
   game_hash.each do |home_away, outer_value|
     outer_value[:players].each do |player|
-     pp k
+     pp player
     end
   end
 end
