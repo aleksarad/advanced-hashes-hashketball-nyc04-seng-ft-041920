@@ -180,7 +180,7 @@ end
 
 def player_stats (player)
   game_hash.each do |home_away, outer_value|
-    pp outer_value
+    outer_value[:players].each
   end
 end
 
