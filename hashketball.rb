@@ -127,3 +127,43 @@ def game_hash
 end
 
 # Write code here
+
+# p game_hash[:home][:team_name]
+
+def num_points_scored (player)
+  game_hash.each do |home_away, outer_value| 
+    outer_value[:players].each do |key|
+      if key[:player_name] == player 
+        return key[:points]
+      end
+    end
+  end
+end
+
+def shoe_size (player)
+    game_hash.each do |home_away, outer_value| 
+    outer_value[:players].each do |key|
+      if key[:player_name] == player 
+        return key[:shoe]
+      end
+    end
+  end
+end 
+
+def team_colors (team_name)
+  game_hash.each do |home_away, outer_value|
+    if outer_value[:team_name] == team_name
+      return outer_value[:colors]
+    end
+  end
+end
+
+def team_names
+names = []
+  game_hash.each do |home_away, outer_value|
+    names.push(outer_value[:team_name])
+  end
+  return names
+end
+
+team_names
